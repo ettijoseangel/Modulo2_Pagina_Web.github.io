@@ -41,3 +41,21 @@ header, main, footer {
     font-size: 24px;
     font-weight: bold;
 }
+
+/*Selector de clase para Menú de navegación*/
+.nav-lista{
+    list-style: none;
+}
+
+/*Estilo de los enlaces del menú*/
+.nav-lista a{
+    text-decoration: none;
+    color: #FFF4E6;
+    font-weight: bold;
+    transition: .3s;
+}
+
+/*Efecto hover en los enlaces del menú*/
+.nav-lista a:hover{
+    color: #FFD580;
+}
