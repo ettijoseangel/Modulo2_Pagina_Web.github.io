@@ -74,6 +74,8 @@ header, main, footer {
     padding-bottom: 20px;
     box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
     transition: transform 0.2s, box-shadow 0.2s ease;
+    margin: 20px;
+    padding: 15px;
 }
 
 /*Efecto al pasar el mouse*/
@@ -114,8 +116,8 @@ header, main, footer {
 }
 
 /*Boton de comprar*/
-.producto-boton{
-    background-color: #FFAA33;
+.producto-button{
+    background: #FFAA33;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -126,6 +128,6 @@ header, main, footer {
     font-weight: bold;
 }
 /*Efecto hover en el boton*/
-.producto-boton:hover{
-    background-color: #E68A00;
+.producto-button:hover{
+    background:#FFC46B;
 }
