@@ -29,3 +29,15 @@ header, main, footer {
     max-width: 1200px; /*Se puede cambiar a 900, 1000, etc*/
     margin: 0 auto;
 }
+
+/*Navbar*/
+.nav-principal {
+    background-color: #4A2E0A;
+    color: white;
+    padding: 15px 25px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
