@@ -1,6 +1,31 @@
-/*Reset basico*/
+/*Reset basico
+ - Elimina margenes y padding por defecto
+ - Aplica box-sizing border-box a todos los elementos (incluye padding y border en el ancho y alto total)
+*/
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/*Selector de tipo etiqueta*/
+body{
+    /*Aplicando fuente de Google Fonts: Lexeng*/
+    font-family: 'Lexend', sans-serif;
+    /*Color de fondo suave (Como de horno recien horneado)*/
+    background-color: #FFF7ED;
+    /*Color de texto principal*/
+    color: #4A2E0A;
+}
+
+/* Limitar el ancho y centrar
+    - header, main y footer no serán de ancho completo
+    - max-width evita que la paágina se vea muy ancha
+    - margin auto los coloca al centro del body
+*/
+header, main, footer {
+    width: 100%;
+    max-width: 1200px; /*Se puede cambiar a 900, 1000, etc*/
+    margin: 0 auto;
 }
