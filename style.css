@@ -156,32 +156,58 @@ li{
     margin-top: 40px;
 }
 
-/*Formulario*/
-.contacto-form{
-    background: wheat;
-    padding: 20px;
-    border-radius: 15px;
+/* Contenedor del aside */
+.contacto-aside {
+    max-width: 350px;
+    margin: 20px auto;
 }
 
-/*Inputs y textarea del formulario*/
-.form-contacto-input, .form-contacto-textarea{
-    padding: 10px;
+/* Formulario */
+.contacto-form {
+    background: #fff;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Inputs */
+.contacto-input,
+.contacto-textarea {
+    width: 100%;
+    padding: 12px;
     border: 2px solid #FFD580;
-    border-radius: 6px;
+    border-radius: 8px;
+    font-size: 15px;
+    margin-bottom: 12px;
+    transition: border .2s ease, box-shadow .2s ease;
 }
 
-.contacto-button{
+/* Efecto al seleccionar */
+.contacto-input:focus,
+.contacto-textarea:focus {
+    border-color: #FFAA33;
+    box-shadow: 0 0 6px rgba(255,170,51,0.4);
+    outline: none;
+}
+
+/* Botón */
+.contacto-button {
     background: #FFAA33;
     color: white;
     border: none;
-    padding: 10px 15px;
-    border-radius: 6px;
+    padding: 12px 18px;
+    border-radius: 10px;
     cursor: pointer;
     transition: 0.3s ease;
-    font-size: 15px;
-    font-weight: bold;
-    margin-top: 10px;
+    font-size: 16px;
+    width: 100%;
 }
+
+/* Hover */
+.contacto-button:hover {
+    background: #ffb955;
+}
+
 
 /*Footer*/
 footer{
@@ -190,4 +216,7 @@ footer{
     text-align: center;
     padding: 15px 25px;
     margin-top: 40px;
+}
+footer a{
+    color: #FFF4E6;
 }
