@@ -36,6 +36,7 @@ header, main{
     padding: 6px 10px;
     font-size: 14px;
     color: white;
+    text-transform: uppercase;
 }
 
 /*Navbar*/
