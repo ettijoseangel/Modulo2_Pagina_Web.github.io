@@ -24,10 +24,18 @@ body{
     - max-width evita que la paágina se vea muy ancha
     - margin auto los coloca al centro del body
 */
-header, main, footer {
+header, main{
     width: 100%;
     max-width: 1200px; /*Se puede cambiar a 900, 1000, etc*/
     margin: 0 auto;
+}
+
+.top-banner{
+    background-color: #FFAA33;
+    text-align: center;
+    padding: 6px 10px;
+    font-size: 14px;
+    color: white;
 }
 
 /*Navbar*/
@@ -35,6 +43,10 @@ header, main, footer {
     background-color: #4A2E0A;
     color: white;
     padding: 15px 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: sticky;
+    top: 0;
 }
 
 .logo {
