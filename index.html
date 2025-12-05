@@ -17,8 +17,14 @@
 
 </head>
 <body>
+
+
     <!--Header-->
-    <header>
+    <header class="top-banner">
+        <p>Envios gratis en la compra de $500.00 MXN o más!</p>
+    </header>
+
+    <!--Dejando a la barra sola para aplicar Position Sticty-->
         <nav class="nav-principal">
             <h1 class="logo">Panadería: Pan y Circo</h1>
             <ul class="nav-lista">
@@ -28,12 +34,12 @@
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
-    </header>
+
     
     <!--Sección de contenido principal-->
     <main>
         <!--Primera seccion: Menu-->
-        <section id="Menu">
+        <section id="menu">
             <h2>Menú</h2>
             <p>Explora nuestra variedad de panes artesanales y pasteles frescos.</p>
 
@@ -53,6 +59,8 @@
 
                 <!--Producto 2-->
                 <div class="producto-tarjeta">
+                    <!--Agregar badge de oferta Position:Absolute-->
+                    <span class="producto-badge">Oferta de Aniversario</span>
                     <img src="https://www.solopanes.com/wp-content/uploads/2015/10/White-and-Yellow-Simple-Fireworks-Photo-New-Year-Card-2-1.jpg" alt="Pan de chocolate" class="producto-img">
                     <h3 class="producto-titulo">Pan de Chocolate</h3>
                     <p class="producto-descripcion">
@@ -127,5 +135,7 @@
             <li><a href="#" target="_blank">Twitter</a></li>
         </ul>
     </footer>
+
+    <a href="#menu" class="carrito-button">Ver carrito 🛒</a>
 </body>
 </html>
