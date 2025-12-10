@@ -49,7 +49,15 @@ header, main{
     position: sticky;
     top: 0;
     z-index: 1000;
+
+    /*Agregando Flexbox*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
+
+
 
 .logo {
     font-size: 24px;
@@ -59,6 +67,11 @@ header, main{
 /*Selector de clase para Menú de navegación*/
 .nav-lista{
     list-style: none;
+
+    /*Agregando flexbox*/
+    display: flex;
+    gap: 20px;
+    align-items: center;
 }
 
 /*Estilo de los enlaces del menú*/
@@ -74,9 +87,13 @@ header, main{
     color: #FFD580;
 }
 
-/*Contenedor del menu*/
+/*Contenedor del menu de productos*/
 .menu-contenedor{
     padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
 /*Tarjeta (card) del producto*/
@@ -89,10 +106,9 @@ header, main{
     padding-bottom: 20px;
     box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
     transition: transform 0.2s, box-shadow 0.2s ease;
-    /*Para que la badge se pueda...*/
+    /*Para que la badge absoluta se posicione dentro...*/
     position: relative;
-    margin: 20px;
-    padding: 15px;
+    flex: 1 1 240px; /*Flex-grow, flex-shrink, flex-basis*/
 }
 
 /*Efecto al pasar el mouse*/
@@ -183,6 +199,16 @@ li{
 /*Contacto en dos columnas*/
 .contacto-section{
     margin-top: 40px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+/*Contenido de la seccion contacto*/
+.contacto-contenido,
+.contacto-aside{
+    flex: 1 1 200px; /*Flex-grow, flex-shrink, flex-basis*/
 }
 
 /* Contenedor del aside */
@@ -197,6 +223,10 @@ li{
     padding: 25px;
     border-radius: 20px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 /* Inputs */
