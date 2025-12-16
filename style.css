@@ -40,6 +40,10 @@ body{
     text-transform: uppercase;
     letter-spacing: 1px;
     text-align: center;
+
+    position: sticky; /*El banner se queda fijo en la parte superior al hacer scroll*/
+    top: 0;
+    z-index: 1000; /*Para que esté por encima de otros elementos*/
 }
 
 /*Navbar*/
@@ -47,11 +51,9 @@ body{
     background-color: #4A2E0A;
     color: white;
     padding: 15px 25px;
-
-    margin: 0 auto;
     position: sticky;
-    top: 0;
-    z-index: 1000;
+    top: 39px;
+    z-index: 1000; /*Para que esté por encima de otros elementos*/
 
     /*Agregando Flexbox*/
     display: flex;
