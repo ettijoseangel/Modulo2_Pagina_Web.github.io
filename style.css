@@ -60,7 +60,8 @@ body{
 
 
 .logo {
-    font-size: 24px;
+    font-family: "Tangerine", cursive;  /*Fuente Tangerine para el nombre de la panaderia*/
+    font-size: 40px;
     font-weight: bold;
 }
 
