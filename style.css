@@ -31,7 +31,7 @@ body{
 }
 
 .top-banner{
-    background-color: #FFAA33;
+    background-color: #e99928;
     text-align: center;
     padding: 6px 10px;
     font-size: 14px;
@@ -317,7 +317,7 @@ li{
 
 /* Botón */
 .contacto-button {
-    background: #FFAA33;
+    background: #f3a63b;
     color: white;
     border: none;
     padding: 12px 18px;
@@ -330,7 +330,7 @@ li{
 
 /* Hover */
 .contacto-button:hover {
-    background: #ffb955;
+    background: #fc9506;
 }
 
 
@@ -365,5 +365,5 @@ footer a{
 }
 
 .carrito-button:hover{
-    background-color: #e0a858;
+    background-color: #e99928;
 }
