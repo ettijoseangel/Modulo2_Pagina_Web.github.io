@@ -20,11 +20,11 @@ body{
 }
 
 /* Limitar el ancho y centrar
-    - header, main y footer no serán de ancho completo
+    - main no será de ancho completo
     - max-width evita que la paágina se vea muy ancha
     - margin auto los coloca al centro del body
 */
-header, main{
+ main{
     width: 100%;
     max-width: 1200px; /*Se puede cambiar a 900, 1000, etc*/
     margin: 0 auto;
@@ -44,7 +44,7 @@ header, main{
     background-color: #4A2E0A;
     color: white;
     padding: 15px 25px;
-    max-width: 1200px;
+
     margin: 0 auto;
     position: sticky;
     top: 0;
