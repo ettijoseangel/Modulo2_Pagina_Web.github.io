@@ -11,7 +11,7 @@
 
 /*Selector de tipo etiqueta*/
 body{
-    /*Aplicando fuente de Google Fonts: Lexeng*/
+    /*Aplicando fuente de Google Fonts: Lexend*/
     font-family: 'Lexend', sans-serif;
     /*Color de fondo suave (Como de horno recien horneado)*/
     background-color: #FFF7ED;
@@ -73,7 +73,6 @@ body{
 /*Selector de clase para Menú de navegación*/
 .nav-lista{
     list-style: none;
-
     /*Agregando flexbox*/
     display: flex;
     gap: 20px;
@@ -84,8 +83,9 @@ body{
 .nav-lista a{
     text-decoration: none;
     color: #FFF4E6;
-    font-weight: bold;
-    transition: .3s;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: 0.3s ease-in-out;
 }
 
 /*Efecto hover en los enlaces del menú*/
