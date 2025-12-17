@@ -65,8 +65,9 @@ body{
 
 /*Navbar*/
 .nav-principal {
-    background-color: #4A2E0A;
-    color: white;
+    background-color: #FFF7ED;
+    color: #4A2E0A;
+    border-bottom: 1px solid #e2d9cd;
     padding: 15px 25px;
     position: sticky;
     top: 39px;
@@ -80,7 +81,7 @@ body{
 }
 
 
-
+/*Selector para el titulo de la panaderia*/
 .logo {
     font-family: "Tangerine", cursive;  /*Fuente Tangerine para el nombre de la panaderia*/
     font-size: 40px;
@@ -99,16 +100,35 @@ body{
 /*Estilo de los enlaces del menú*/
 .nav-lista a{
     text-decoration: none;
-    color: #FFF4E6;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    transition: 0.3s ease-in-out;
+    color: #4A2E0A;
+    font-weight: 500; /*Para efecto fino*/
+    font-size: 1.1rem;
+    transition: all 0.3s ease-in-out;
+    position: relative; /*Para efecto de la linea inferior*/
+    display: inline-block; /*Permite que el enlace tenga dimensiones propias*/
 }
 
 /*Efecto hover en los enlaces del menú*/
 .nav-lista a:hover{
-    color: #FFD580;
+    color: #C77D30;
+    transform: translateY(-2px);  /*Pequeño efecto de elevación*/
 }
+
+/*Linea elegante que aparece al pasar el mouse*/
+.nav-lista a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #C77D30;
+}
+
+.nav-lista a:hover::after {
+    width: 100%;               /* La línea se expande al hacer hover */
+}
+
 
 /*Portada*/
 .portada{
