@@ -19,6 +19,11 @@ body{
     color: #4A2E0A;
 }
 
+/*Selector para las secciones del sitio*/
+section{
+    scroll-margin-top: 110px;
+}
+
 /*Selector para Banner*/
 .banner{
     width: 100%; /* Ocupa todo el ancho de la pantalla */
@@ -30,10 +35,6 @@ body{
     justify-content: center;
     align-items: center;
 }
-
-
-
-
 
 /* Limitar el ancho y centrar
     - main no será de ancho completo
