@@ -592,9 +592,9 @@ li{
 .equipo-rol{
     font-size: 0.85rem;
     color: #6B4C1A;
-    font-weight: bold;
+    font-weight: 800;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
     margin: 10px 0;
     min-height: 20px; /* Asegura que el nivel inicial de la descripción sea igual */
 }
