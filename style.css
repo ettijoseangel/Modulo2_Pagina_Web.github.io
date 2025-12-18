@@ -174,11 +174,11 @@ section{
 
 /*Contenedor del menu de productos*/
 .menu-contenedor{
-    display:flex;
-    gap: 30px;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;         /* Para que las cards bajen a la siguiente fila */
+    gap: 30px;               /* Espacio entre ellas */
+    justify-content: center; /* Centradas */
+    padding: 40px 20px;
 }
 
 /*Tarjeta (card) del producto*/
