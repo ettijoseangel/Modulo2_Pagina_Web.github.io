@@ -524,6 +524,10 @@ li{
     max-width: 700px;
 }
 
+.equipo-section h2{
+    padding-bottom: 25px;
+}
+
 .equipo-contenedor{
     display: flex;
     flex-wrap: wrap;
@@ -534,17 +538,22 @@ li{
 
 .equipo-card{
     background-color: #FFC46B;
-    width: 200px;
-    padding: 60px 20px 30px;
-    border-radius: 15px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    width: 250px; /*Para que el texto no se amontone*/
+    padding: 70px 20px 30px;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(74, 46, 10, 0.15);
     text-align: center;
-
     /*Flex interno*/
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
+    min-height: 350px; /*Para que todas las cards tengan la misma altura*/
+    transition: transform 0.3s ease;
+}
+
+.equipo-card:hover{
+    transform: translateY(-10px) rotate(1deg);
 }
 
 
@@ -562,21 +571,40 @@ li{
 }
 
 .equipo-card h3{
-    margin-top: 15px;
-    color: #a77422;
-    font-size: 20px;
+    margin-top: 25px;
+    color: #4A2E0A;
+    font-size: 1.2rem;
+    min-height: 3em; /* Reserva espacio para 2 o 3 líneas de nombre */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.equipo-card h4{
+    margin-top: 25px;
+    color: #4A2E0A;
+    font-size: 1.0rem;
+    min-height: 3em; /* Reserva espacio para 2 o 3 líneas de nombre */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .equipo-rol{
-    font-size: 14px;
+    font-size: 0.85rem;
     color: #6B4C1A;
-    margin: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 10px 0;
+    min-height: 20px; /* Asegura que el nivel inicial de la descripción sea igual */
 }
 
 .equipo-desc{
-    font-size: 14px;
+    font-size: 0.9rem;
     color: #4A2E0A;
-    line-height: 1;
+    line-height: 1.4;
+    text-align: center;
+    padding: 0 10px;
 }
 
 /*Contacto en dos columnas*/
