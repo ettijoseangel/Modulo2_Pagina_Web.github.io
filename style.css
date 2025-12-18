@@ -264,12 +264,26 @@ section{
     transform: scale(0.95); /* Se encoge un poquito al hacer clic */
 }
 
-/*Badge de la oferta*/
-.producto-badge{
+/*Badge de la oferta de aniversario*/
+.aniversario-badge{
     position: absolute;
     top: 0;
     left: 0;
     background-color: #EF4444; /* Rojo vibrante para ofertas */
+    color: white;
+    padding: 5px 15px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 0 0 15px 0; /* Solo redondea la esquina inferior derecha */
+    z-index: 10;
+}
+
+/*Badge de la oferta de temporada*/
+.temporada-badge{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #708D81; /* Verde pistache para ofertas de temporada */
     color: white;
     padding: 5px 15px;
     font-size: 0.8rem;
