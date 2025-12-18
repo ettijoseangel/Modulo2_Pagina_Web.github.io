@@ -8,6 +8,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+/*Configuracion global para el html*/
+html{
+    scroll-behavior: smooth; /*Efecto de scroll suave al hacer click en enlaces internos*/
+}
 
 /*Selector de tipo etiqueta*/
 body{
