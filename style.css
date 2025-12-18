@@ -268,6 +268,8 @@ section{
     gap: 30px;               /* Espacio entre ellas */
     justify-content: center; /* Centradas */
     padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /*Tarjeta (card) del producto*/
@@ -304,7 +306,9 @@ section{
     justify-content: center;
     align-items: center;
     object-fit: contain; /*Ajusta la imagen sin deformarse*/
-    background-color: #ffffff;
+    background-color: #fcfcfc;
+    border-bottom: none;
+    border-radius: 12px;
     padding: 15px; /* Un poco más de aire para que el producto luzca mejor */
     border-bottom: 1px solid #F7EAD0; /* Separa visualmente la foto del texto */
     margin-bottom: 10px;
@@ -319,49 +323,51 @@ section{
 
 /*Titulo del producto*/
 .producto-titulo{
-    font-size: 1.4rem; /* Tamaño de fuente ajustado */
+    font-size: 1.2rem; /* Tamaño de fuente ajustado */
     font-weight: 700;
-    margin-top: 10px;
+    margin-top: 5px;
     color: #4A2E0A;
     margin-top: 15px;
 }
 
 /*Descripcion del producto*/
 .producto-descripcion{
-    line-height: 1.5; /* Mejora la lectura de la descripción */
+    line-height: 0.9rem; /* Mejora la lectura de la descripción */
     color: #6B4C1A;
-    margin: 10px 20px;
+    margin: 5px 15px;
     min-height: 42px; /* Mantiene las tarjetas alineadas si un texto es más corto que otro */
+    opacity: 0.8;
 }
 
 /*Precio del producto*/
 .producto-precio{
     font-size: 1.2rem;
     font-weight: 800; /*Para que destaque el precio dentro de la card*/
-    color: #D97706;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    color: #FFAA33;
+    margin-top: auto;
+    margin-bottom: 10px;
 }
 
 /*Boton de comprar*/
 .producto-button{
-    background: #FFAA33;
-    color: white;
-    border: none;
+    background: transparent;
+    color: #FFAA33;
+    border: 2px solid #FFAA33;
     padding: 12px 20px;
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease; /* 'all' para que el color y la escala cambien suave */
     font-size: 15px;
     font-weight: bold;
-    width: 90%;
+    width: 100%;
     margin-top: auto;
     margin: 10px auto;
     display: block;
 }
 /* Efecto hover en el botón */
 .producto-button:hover {
-    background: #FFC46B;
+    background: #FFAA33;
+    color: white;
     transform: translateY(-2px); /* Pequeño salto hacia arriba */
     box-shadow: 0 4px 10px rgba(255, 170, 51, 0.3); /* Un brillo naranja suave */
 }
