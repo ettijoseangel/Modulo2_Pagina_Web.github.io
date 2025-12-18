@@ -174,23 +174,23 @@ section{
 
 /*Contenedor del menu de productos*/
 .menu-contenedor{
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    display:flex;
+    gap: 30px;
     justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
 }
 
 /*Tarjeta (card) del producto*/
 .producto-tarjeta{
-    text-align: center;
-    background: #FFF4E6;
-    border: 2px solid #FFD580;
+    background-color: #fff; /* Fondo blanco para que resalte sobre el crema */
+    border: 1px solid #F7EAD0; /* Borde suave */
     border-radius: 15px;
+    padding: 20px;
+    text-align: center;
     overflow: hidden;
     padding-bottom: 20px;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
-    transition: transform 0.2s, box-shadow 0.2s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     /*Para que la badge absoluta se posicione dentro...*/
     position: relative;
     flex: 1 1 240px; /*Flex-grow, flex-shrink, flex-basis*/
@@ -198,8 +198,8 @@ section{
 
 /*Efecto al pasar el mouse*/
 .producto-tarjeta:hover{
-    transform: translateY(-6px);
-    box-shadow: 0px 10px 20px rgba(0,0,0,0.15);
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(74, 46, 10, 0.1); /* Sombra suave de color café */
 }
 
 /*Imagen del producto*/
@@ -208,29 +208,33 @@ section{
     height: 220px;
     object-fit: contain; /*Ajusta la imagen sin deformarse*/
     background-color: #FFF7ED;
-    padding: 10px;
+    padding: 15px; /* Un poco más de aire para que el producto luzca mejor */
+    border-bottom: 1px solid #F7EAD0; /* Separa visualmente la foto del texto */
 }
 
 /*Titulo del producto*/
 .producto-titulo{
-    font-size: 22px;
+    font-size: 1.4rem; /* Tamaño de fuente ajustado */
     font-weight: 700;
     margin-top: 10px;
+    color: #4A2E0A;
+    margin-top: 15px;
 }
 
 /*Descripcion del producto*/
 .producto-descripcion{
-    font-size: 14px;
+    line-height: 1.5; /* Mejora la lectura de la descripción */
     color: #6B4C1A;
-    margin: 10px 15px;
+    margin: 10px 20px;
+    min-height: 42px; /* Mantiene las tarjetas alineadas si un texto es más corto que otro */
 }
 
 /*Precio del producto*/
 .producto-precio{
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 1.2rem;
+    font-weight: 800; /*Para que destaque el precio dentro de la card*/
     color: #D97706;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 /*Boton de comprar*/
@@ -238,28 +242,40 @@ section{
     background: #FFAA33;
     color: white;
     border: none;
-    padding: 10px 15px;
-    border-radius: 6px;
+    padding: 12px 20px;
+    border-radius: 8px;
     cursor: pointer;
-    transition: 0.3s ease;
+    transition: all 0.3s ease; /* 'all' para que el color y la escala cambien suave */
     font-size: 15px;
     font-weight: bold;
+    width: 90%;
+    margin: 10px auto;
+    display: block;
 }
-/*Efecto hover en el boton*/
-.producto-button:hover{
-    background:#FFC46B;
+/* Efecto hover en el botón */
+.producto-button:hover {
+    background: #FFC46B;
+    transform: translateY(-2px); /* Pequeño salto hacia arriba */
+    box-shadow: 0 4px 10px rgba(255, 170, 51, 0.3); /* Un brillo naranja suave */
 }
 
+/* Efecto cuando se hace clic (Active) */
+.producto-button:active {
+    transform: scale(0.95); /* Se encoge un poquito al hacer clic */
+}
+
+/*Badge de la oferta*/
 .producto-badge{
     position: absolute;
-    background: #FF5733;
+    top: 0;
+    left: 0;
+    background-color: #EF4444; /* Rojo vibrante para ofertas */
     color: white;
-    top: 10px;
-    left: 10px;
-    padding: 5px 12px;
-    border-radius: 20px;
-    font-size: 14px;
+    padding: 5px 15px;
+    font-size: 0.8rem;
     font-weight: bold;
+    border-radius: 0 0 15px 0; /* Solo redondea la esquina inferior derecha */
+    z-index: 10;
 }
 
 /* Secciones generales */
