@@ -177,7 +177,7 @@ section{
     overflow-x: auto;         /* Permite el scroll horizontal */
     scroll-snap-type: x mandatory; /* El "imán" para que se detenga en cada foto */
     gap: 20px;
-    padding: 20px;
+    padding: 20px 0;
     scrollbar-width: none;    /* Oculta la barra de scroll en Firefox */
 }
 
@@ -186,15 +186,72 @@ section{
 }
 
 .carrusel-item {
-    flex: 0 0 80%;            /* Cada foto ocupa el 80% del ancho para ver un poco de la siguiente */
-    scroll-snap-align: center; /* Alinea el producto al centro al soltar el scroll */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    flex: 0 0 80%;             /* Se asoma la siguiente tarjeta */
+    scroll-snap-align: center;
     text-align: center;
-    background-color: #ffffff; /* Blanco puro, como en la referencia */
+    background-color: #ffffff;
     border-radius: 12px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05); /* Sombra casi invisible */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
     padding: 25px;
     transition: transform 0.3s ease;
+
+    /* --- Añadidos para alineación perfecta --- */
+    min-height: 450px;         /* Ajusta según necesites para que todas midan igual */
+    justify-content: space-between; /* Empuja el botón al final y deja espacio uniforme */
+    max-width: 450px;          /* Evita que en pantallas grandes se vea gigante */
 }
+
+/* Efecto hover opcional para que se sienta interactivo */
+.carrusel-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.badge-temporada {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #708D81; /* El verde que elegimos para temporada */
+    color: white;
+    padding: 5px 15px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    border-radius: 0 0 12px 0; /* Redondea solo la esquina inferior derecha */
+    z-index: 10;
+}
+
+/* Estilo para los títulos en el carrusel */
+.carrusel-item h3 {
+    font-family: 'Lexend', sans-serif;
+    color: #4A2E0A; /* El marrón oscuro que ya usas */
+    font-size: 1.4rem;
+    margin-top: 15px;
+    font-weight: 700;
+}
+
+/* Estilo para la frase corta */
+.carrusel-item p {
+    font-family: 'Lexend', sans-serif;
+    color: #8B5E3C; /* Un marrón más suave para la descripción */
+    font-size: 0.95rem;
+    margin: 8px 0;
+    font-style: italic; /* Le da un toque elegante de temporada */
+}
+
+/* Estilo para el precio destacado */
+.precio-destacado {
+    color: #FFAA33; /* Tu naranja vibrante */
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 15px;
+}
+
 
 .carrusel-item img {
     width: 100%;
