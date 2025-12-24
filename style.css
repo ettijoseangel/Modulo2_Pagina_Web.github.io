@@ -607,6 +607,25 @@ li{
     padding: 0 10px;
 }
 
+/*Estilo para el enlace de testimonio*/
+.testimonio {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 15px;
+    background-color: #4A2E0A; /* Marrón para contrastar con el naranja */
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.testimonio:hover {
+    background-color: #FFAA33;
+    transform: scale(1.05);
+}
+
 /*Contacto en dos columnas*/
 .contacto-section{
     max-width: 1100px;
