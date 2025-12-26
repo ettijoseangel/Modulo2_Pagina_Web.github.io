@@ -70,8 +70,6 @@ El repositorio contiene:
 
 ---
 
----
-
 ## 🌐 Publicación
 
 Mi proyecto está publicado en GitHub Pages y puedes verlo aquí:
@@ -99,9 +97,21 @@ https://github.com/ettijoseangel/Modulo2_Pagina_Web.github.io
 
 ---
 
-## 🖼️ Screenshot
+## 🖼️ Screenshots del proyecto realizado
 
-Proximamente!!!
+![Inicio de la página](img/screenshots/inicio.png)
+
+![Bienvenido a la espiga de oro/Especiales de temporada](img/screenshots/bienvenido.png)
+
+![Catalogo de productos](img/screenshots/catalogo.png)
+
+![Catalogo de productos](img/screenshots/catalogo-2.png)
+
+![Nuestra historia](img/screenshots/nuestra-historia.png)
+
+![Nuestro equipo](img/screenshots/nuestro-equipo.png)
+
+![Ultima seccion](img/screenshots/ultima-seccion.png)
 
 ---
 
