@@ -16,6 +16,7 @@ Construir una página web estática desde cero haciendo uso de:
 - Enlaces internos y externos.
 - Buenas prácticas de estructura.
 - Manejo de Flexbox, Position y estilos aplicados mediante etiquetas y clases.
+- Manejo del Diseño Responsivo para la adaptación en distintas pantallas de visualización.
 - Uso de Git y GitHub para el control de versiones.
 - Publicación del proyecto a través de GitHub Pages.
 
@@ -60,6 +61,7 @@ El repositorio contiene:
 - **GitHub Pages**
 
 * **Flexbox Layout**: Control total de alineación en el catálogo, equipo y contacto.
+* **Responsive Design**: Adaptación de la página web a distintos tamaños de pantallas de visualización.
 * **Posicionamiento Avanzado**: Uso de `position: absolute` para las fotos del equipo que sobresalen de las tarjetas.
 * **Efectos Visuales**: 
     * `mix-blend-mode: multiply` para integrar imágenes con fondo blanco.
